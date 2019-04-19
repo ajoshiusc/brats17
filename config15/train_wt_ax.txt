@@ -1,5 +1,5 @@
 [data]
-data_root             = /home/guotwang/data/BRATS2015_Training
+data_root             = /ImagePTE1/ajoshi/BRATS2015_Training
 data_names            = config15/train_names_all.txt 
 modality_postfix      = [Flair, T1, T1c, T2]
 label_postfix         = OT

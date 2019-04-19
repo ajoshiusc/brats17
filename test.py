@@ -15,7 +15,7 @@ import time
 import os
 import sys
 import tensorflow as tf
-from tensorflow.contrib.data import Iterator
+from tensorflow.data import Iterator
 from util.data_loader import *
 from util.data_process import *
 from util.train_test_func import *
@@ -450,11 +450,12 @@ def test(config_file):
     sess.close()
       
 if __name__ == '__main__':
-    if(len(sys.argv) != 2):
-        print('Number of arguments should be 2. e.g.')
-        print('    python test.py config17/test_all_class.txt')
-        exit()
-    config_file = str(sys.argv[1])
+#    if(len(sys.argv) != 2):
+#        print('Number of arguments should be 2. e.g.')
+#        print('    python test.py config17/test_all_class.txt')
+#        exit()
+#    config_file = str(sys.argv[1])
+    config_file= 'tracktbipilot/test_all_class_tracktbi.txt'
     assert(os.path.isfile(config_file))
     test(config_file)
     

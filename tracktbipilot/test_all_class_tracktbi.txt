@@ -1,9 +1,9 @@
 [data]
-data_root         = /ImagePTE1/ajoshi/BRATS2015_Training
-save_folder       = result15
-data_names        = config15/test_names_temp.txt
-modality_postfix  = [Flair, T1, T1c, T2]
-file_postfix      = mha
+data_root         = /big_disk/ajoshi/fitbir/preproc/tracktbi_pilot
+save_folder       = results_tracktbipilot
+data_names        = tracktbipilot/tracktbi_pilot_done.txt
+modality_postfix  = [FLAIRmni.nii, T1mni.nii, T1mni.nii, T2mni.nii]
+file_postfix      = nii.gz
 
 [network1ax]
 net_type            = MSNet
